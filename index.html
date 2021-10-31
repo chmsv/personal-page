@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anna is an independent web developer, generative art enthusiast and digital marketing specialist."
+    />
+    <meta
+      name="keywords"
+      content="web developer, designer, freelance, independent developer, contract, part time, user interface, web designer, coder, digital marketing, portfolio"
+    />
+    <!-- <meta name="robots" content="index, follow"> -->
+    <title>chmsv's portfolio</title>
+    <meta property="og:title" content="Web developer portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.chmsv.com" />
+    <meta property="og:image" content="images/open-graph.png" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="images/white.png" alt="logo" />
+      </div>
+
+      <div class="navbar">
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am Anna
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        web developer and generative art enthusiast
+      </p>
+    </section>
+
+    <!-- Services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Design and Webdev</h3>
+          <p>
+            I have experience in creating different types of projects from a
+            simple informational website to a fully-featured platform. <br> I provide
+            a wide range of webdev services from wireframing your website
+            to its design and code. <br> I build responsive websites that work across all devices
+            and platforms.
+          </p>
+          <p>There is no challenge I won't face.</p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Digital Art</h3>
+          <p>
+            I am very keen on digital and generative art. I primarily use Blender, Three.js, and p5.js library for making unique pieces of art.
+          </p>
+          <p>
+            Generative art expresses a balance between human imagination and computer capabilities. I believe in the idea that the code is a form of art in itself.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>Besides Web Development</h3>
+          <p>
+            I have a strong background in digital marketing. For almost 4 years I’ve been working in acclaimed
+            advertising agencies. My clients include well known automotive
+            brands, FMCG and DIY retailers.
+          </p>
+          <p>
+            I know that a well designed and functional website is essential to provide adequate customer service.
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#projects" class="btn">Projects</a>
+    </section>
+
+    <!-- About -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">
+        I am skilled, efficient, and flexible
+      </h2>
+      <div class="about-me__body">
+        <p>
+          I am a self-taught full-stack developer primarily focused on
+          front-end. I specialize in building fresh and functional websites for
+          both businesses and customers.
+        </p>
+
+        <ul class="stack">
+          I work with:
+          <li class="stack__bullet">Figma &#8212 for wireframing and design;</li>
+          <li class="stack__bullet">
+            HTML5, CSS and JavaScript &#8212 for basic things;
+          </li>
+          <li class="stack__bullet">
+            React and Redux &#8212 for complex websites;
+          </li>
+          <li class="stack__bullet">Node.js &#8212 for back-end;</li>
+          <li class="stack__bullet">MongoDB, D3 &#8212 for data wrangling;</li>
+          <li class="stack__bullet">
+            BEM, SASS and Tailwind &#8212 for styling;
+          </li>
+          <li class="stack__bullet">p5.js and Three.js &#8212 for generative art;</li>
+        </ul>
+        <p class="location">
+          I'm currently based in Moscow (Russia), but open to remote work
+          and relocation.
+        </p>
+      </div>
+    </section>
+
+    <!-- My Work -->
+    <section class="projects" id="projects">
+      <h2 class="section__title">Projects</h2>
+      <p class="section__subtitle--projects">
+        Check out these links to get an idea of what I can do. <br> And more to come.
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a target="_blank" rel="noopener noreferrer"
+          href="https://missing-semester-rus.github.io"
+          class="portfolio__item"
+        >
+          <img
+            src="images/portfolio-01.png"
+            alt="mit missing semester"
+            class="portfolio__img"
+          />
+          <p class="portfolio__summary">
+            Russian translation of the MIT course "Missing Semester of Your CS
+            Degree".
+          </p>
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a target="_blank" rel="noopener noreferrer"
+          href="https://chmsv.github.io/everything-means-everything/"
+          class="portfolio__item">
+          <img src="images/portfolio-02.png" alt="generative art" class="portfolio__img" />
+          <p class="portfolio__summary">
+            Generative art project inspired by The National. Made with p5.js library.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        Please feel free to reach out.<br />
+        Let's work together!
+      </p>
+      <a target="_blank" rel="noopener noreferrer" href="mailto:mail@chmsv.com" class="footer__link">mail@chmsv.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a target="_blank" rel="noopener noreferrer"
+            class="social-list__link"
+            href="https://www.linkedin.com/in/💻anna-chemisova-85b2511b7/"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a target="_blank" rel="noopener noreferrer" class="social-list__link" href="https://github.com/chmsv">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a target="_blank" rel="noopener noreferrer" class="social-list__link" href="https://www.instagram.com/chmsv.px">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
