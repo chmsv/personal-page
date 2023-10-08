@@ -1,53 +1,665 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Anna is an independent web developer, generative art enthusiast and digital marketing specialist."
-    />
-    <meta
-      name="keywords"
-      content="web developer, designer, freelance, independent developer, contract, part time, user interface, web designer, coder, digital marketing, portfolio"
-    />
-    <!-- <meta name="robots" content="index, follow"> -->
-    <title>chmsv's personal website</title>
-    <meta property="og:title" content="Web developer portfolio" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.chmsv.com" />
-    <meta property="og:image" content="images/open-graph.png" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Anna Chemisova - Rare Books and Digital Humanities</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <header>
-    </header>
-    <!-- About -->
-    <section class="about-me" id="about">
-      <div class="about-me__body">
-        <p class="intro">Hi, I am Anna</p>
-        <p>
-          Someday there'll be a list of projects and a proper CV.
-        </p>
-        <p>
-          For now you can reach me out via <a target="_blank" rel="noopener noreferrer" href="mailto:mail@chmsv.com">mail</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/💻anna-chemisova-85b2511b7/"
-          >LinkedIn</a>, or check out <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/chmsv.px"
-          >my Instagram</a> with generative art.
-        </p>
-        <ul>
-          <li><a target="_blank" rel="noopener noreferrer" href="https://everythingmeanseverything.art/">Generative art project</a> inspired by The National. Made with p5.js library.</li>
-          <li><a target="_blank" rel="noopener noreferrer" href="https://missing-semester-rus.github.io/">Russian translation</a> of the MIT course "Missing Semester of Your CS Degree".</li>
-        </ul>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer">
-      <p>
-        Please feel free to reach out.
-        Let's work together!
-      </p>
-    </footer>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.jpeg"
+              alt="Anna Chemisova"
+              width="80"
+              style="border-radius: 8%;"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Anna Chemisova">Anna Chemisova</h1>
+
+            <p class="title" style="text-align: center">
+              Specialist <br />
+              in Rare Books and Digital Humanities
+            </p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Currently in Besançon, France. Ready to relocate.</address>
+              </div>
+            </li>
+
+            <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:anna.chemisova@edu.univ-fcomte.fr" class="contact-link">anna.chemisova@edu.univ-fcomte.fr</a>
+            </div>
+
+          </li>
+
+          </ul>
+          <div class="separator"></div>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Experienced digital manager now specializing in manuscripts, rare
+              editions and digital humanities. Seamlessly integrating historical
+              treasures with modern innovations.
+            </p>
+
+            <p>
+              In my role at the intersection of digital humanities and rare
+              books, I'm a hybrid professional in both ancient texts and modern
+              technology. Whether it's in an auction house, a library, a
+              bookshop, or a museum, my work would serve as a critical bridge
+              between the past and the present. Essentially, I may amplify the
+              impact of historical documents, contributing to both academic
+              discourse and broader cultural understanding.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/digitization.svg
+                "
+                    alt="design icon"
+                    width="30"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Digitization</h4>
+
+                  <p class="service-item-text">
+                    My work involves digitizing manuscripts and rare books,
+                    making them both preserved and accessible in today's digital
+                    landscape.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/cataloging.svg
+                "
+                    alt="design icon"
+                    width="30"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Cataloging</h4>
+
+                  <p class="service-item-text">
+                    I'm skilled in cataloging and annotating historical texts,
+                    making them easily searchable. I also know my way around
+                    state-of-the-art databases that use high-res imaging and
+                    detailed metadata.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/research.svg"
+                    alt="mobile app icon"
+                    width="30"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Market Research</h4>
+
+                  <p class="service-item-text">
+                    I may conduct comprehensive market analyses to gauge the demand and valuation trajectory for rare books and manuscripts. This involves a synthesis of historical auction data, current market conditions, and collector interests to strategize effective placement in upcoming auctions.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/evaluation.svg"
+                    alt="mobile app icon"
+                    width="30"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Preliminary Evaluation</h4>
+
+                  <p class="service-item-text">
+                    Upon acquisition, I perform an initial assessment of each manuscript or book, scrutinizing its provenance, physical condition, and bibliographic attributes. This cursory evaluation serves as the foundation for further in-depth research and analysis, setting the stage for its eventual cataloging and valuation.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/translation.svg"
+                    alt="mobile app icon"
+                    width="30"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Translation</h4>
+
+                  <p class="service-item-text">
+                    I've professionally translated some correspondence between
+                    notable figures from the Russian Empire and the USSR into French.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/site.svg"
+                    alt="camera icon"
+                    width="30"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Website development</h4>
+
+                  <p class="service-item-text">
+                    I can create and maintain a website for a bookshop or special digital project.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Franche-Comté, France</h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="timeline-text">
+                Master in Rare Book and Digital Humanities
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">National Research University Higher School of Economics, Russia</h4>
+
+              <span>2010 — 2016</span>
+
+              <p class="timeline-text">
+                Bachelor and Master in History
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Intern</h4>
+              <h2 class="h2 timeline-item-title">Les Archives de la Biennale de Paris, Paris</h2>
+
+              <span>April — August 2023</span>
+
+                <ol class="timeline-text">
+                  <li>Developed and implemented multiple layouts for the main pages of the Archive’s website.</li>
+                  <li>Built from scratch and deployed a search engine to search through 2,000 published articles.</li>
+                  <li>Classified the articles by assigning them categories and tags according to their content.</li>
+                  <li>Optimized the website loading speed for the better user experience.</li>
+                </ol>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Translator for an manuscript expert and evaluator</h4>
+              <h2 class="h2 timeline-item-title">Paris, Paris</h2>
+
+              <span>July 2023</span>
+
+                <ol class="timeline-text">
+                  <li>Translated from Russian into French and summarized correspondence of Eugène De Robertis, a Russian philosopher, representative of positivism, sociologist and economist.</li>
+                  <li>Translated from Russian into French and summarized a letter from Dmitri Shostakovich, Soviet composer and pianist.</li>
+                </ol>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Digital Marketing Manager</h4>
+              <h2 class="h2 timeline-item-title">BBDO, Media Direction Group, Moscow, Russia</h2>
+
+              <span>2016 — 2023</span>
+
+                <ol class="timeline-text">
+                <li>Collaborated closely with cross-functional teams, including major automotive and FMCG brands, to design and implement country-level digital storytelling projects that translate traditional narratives into accessible, interactive experiences.</li>
+                <li>Crafted compelling narratives and visual elements for major brands, curated and interpreted content to create engaging digital narratives.</li>
+                <li>Expertly managed communication between diverse stakeholders including brand teams and contractors.</li>
+                </ol>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Intern at archives and museums</h4>
+              <h2 class="h2 timeline-item-title">Department of Manuscripts at the Russian State Library; State Archive of the Russian Federation; State Historical Museum; Moscow, Russia</h2>
+
+              <span>June — August, 2012 — 2016</span>
+              <ol class="timeline-text">
+                <li>Studied, structured and analyzed sources of personal origin including diaries, memoirs, and letters from the 18th–19th century.</li>
+                <li>Cataloged and managed collections of official documents from World War II including records relating to personal participation in the events.</li>
+                <li>Supported documentation and digitisation of the exhibitions catalogs.</li>
+              </ol>
+
+            </li>
+
+          </ol>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Languages:</h5>
+                <p class="skills_list">
+                  Russian, English, French, Ukranian, Greek, Latin
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Publishing:</h5>
+                <p class="skills_list">
+                  Scribus, Sigil, Omeka
+                </p>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Design:</h5>
+                <p class="skills_list">
+                  Adobe, Figma, DaVinci Resolve
+                </p>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web development:</h5>
+                <p class="skills_list">
+                  WordPress, HTML, CSS, Python, JavaScript
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data:</h5>
+                <p class="skills_list">
+                  XHTML, Heurist, Jupyter Notebook
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="Les Archives de la Biennale de Paris">
+              <a href="https://archives.biennaledeparis.fr" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="Les Archives de la Biennale de Paris" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Les Archives de la Biennale de Paris</h3>
+
+                <p class="project-category">Creating website pages and implementing an article search engine, as well as cataloging materials.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="The Paris Bible Project">
+              <a href="https://parisbible.github.io/2023-06-08-PBPCorrect-a-Thon-BesanconX-StandfordMs23/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="The Paris Bible Project" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Paris Bible Project</h3>
+
+                <p class="project-category">The arcticle aims to explore and transcribe the one specific Bible manuscript.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Rare Scientific Books training site">
+              <a href="https://bookshop.rarebook-ubfc.fr/anna/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="Rare Scientific Books training site" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Rare Scientific Books training site</h3>
+
+                <p class="project-category">This is a university project for a Technology for Digital Humanities course. All rights to images and texts belong to the Peter Harrington Rare & First Edition Books.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Generative art project">
+              <a href="https://everythingmeanseverything.art" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="Generative art project" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Generative art project</h3>
+
+                <p class="project-category">All images and text are mine. The artworks were made with Three.js and p5.js libraries.</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #BLOG
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+          <p>This is the space where I keep my notes and articles.</p>
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="./blog_conference.html">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.png" alt="Digital Humanity Conference in 2011" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Oct 1, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Commentary about the Digital Humanity conference</h3>
+
+                  <p class="blog-text">
+                    Conference was held at Columbia University in 2011. My thoughts after 12 years.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="./blog_private_press.html">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.png" alt="The Appledore Private Press" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">DH</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">May 20, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The Appledore Private Press: history and legacy</h3>
+
+                  <p class="blog-text">
+                    Paper for the Master program.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+      -->
+
+    </div>
+
+  </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
